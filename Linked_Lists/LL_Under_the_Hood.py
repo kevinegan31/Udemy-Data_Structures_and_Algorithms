@@ -1,4 +1,4 @@
-# Linked Lists
+# Linked Lists syntax is similar to a set of nested dictionaries
 head = {
     "value": 11,
     "next": {
