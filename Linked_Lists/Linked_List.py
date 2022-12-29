@@ -112,7 +112,7 @@ class LinkedList:
         for _ in range(index):
             temp = temp.next
         return temp
-    # Set item in the list
+    # Set item to value in the list
     def set_value(self, index, value):
         # Gets index and calls it temp
         temp = self.get(index)
