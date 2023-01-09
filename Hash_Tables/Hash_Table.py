@@ -52,8 +52,7 @@ class HashTable:
                     # Then add keys to the all_keys list
                     all_keys.append(self.data_map[i][j][0])
         return all_keys
-
-        
+     
 
 
 
@@ -89,3 +88,43 @@ my_hash_table.set_item('washers', 50)
 my_hash_table.set_item('lumber', 70)
 
 print(my_hash_table.keys())
+
+
+# Common interview question
+'''
+Given two lists, find what items in common.
+'''
+
+# Brute force
+# O(n^2)
+def item_in_common(list1, list2):
+    for i in list1:
+        for j in list2:
+            if i == j:
+                return True
+    return False
+
+# Better answer
+def item_in_common(list1, list2):
+    # Create dictionary
+    my_dict = {}
+    # Loop through list1 and put in dictionary
+    for i in list1:
+        my_dict[i] = True
+    # Loop through list2 and determine whats in common
+    for j in list2:
+        '''
+        Loop through dictionary to see if that key is in the dictionary
+        This is O(n)
+        '''
+        if j in my_dict:
+            return True
+    return False
+
+list1 = [1,3,5]
+list2 = [2,3,5]
+
+
+print(item_in_common(list1, list2))
+
+    
