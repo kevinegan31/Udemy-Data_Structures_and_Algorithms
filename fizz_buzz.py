@@ -9,5 +9,5 @@ def fizzBuzz(n):
             print('Buzz')
         else:
             print(str(n_int))
-print "\n".join(fizzBuzz(n) for n in range(1,n))
+# print "\n".join(fizzBuzz(n) for n in range(1,n))
 fizzBuzz(15)

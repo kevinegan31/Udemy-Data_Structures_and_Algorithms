@@ -113,10 +113,8 @@ def item_in_common(list1, list2):
         my_dict[i] = True
     # Loop through list2 and determine whats in common
     for j in list2:
-        '''
-        Loop through dictionary to see if that key is in the dictionary
-        This is O(n)
-        '''
+        # Loop through dictionary to see if that key is in the dictionary
+        # This is O(n)
         if j in my_dict:
             return True
     return False
